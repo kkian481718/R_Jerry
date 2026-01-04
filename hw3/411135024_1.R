@@ -1,0 +1,6 @@
+salaries <- c(500, 600, 500, 400, 1000, 200, 200, 400, 600, 800)
+breaks_seq <- seq(from = 100, to = 1050, by = 50)
+salary_groups <- cut(salaries, breaks = breaks_seq, right = FALSE)
+frequency_distribution <- table(salary_groups)
+print(frequency_distribution)
+hist(salaries, breaks = breaks_seq, right = FALSE, main = "Histogram of Salaries", xlab = "Salary (US$)", ylab = "Frequency", col = "lightblue", labels = TRUE)

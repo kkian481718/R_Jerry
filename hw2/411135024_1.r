@@ -36,6 +36,6 @@ check_id <- function(id) {
 id_input <- readline("請輸入身分證號：")
 if (check_id(id_input)) {
   cat("✅ 身分證號合法！\n")
-} else {
+}else{
   cat("❌ 身分證號不合法。\n")
 }
